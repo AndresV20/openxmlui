@@ -565,9 +565,17 @@ video {
   margin: 1rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex {
+  display: flex;
 }
 
 .h-8 {
@@ -588,9 +596,21 @@ video {
   max-height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .content-center {
