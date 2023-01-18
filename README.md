@@ -3,7 +3,8 @@ Styling for file converter
 
 
 Going to be creating the styling using tailwindCSS
-
+Notes:
+- If you want to add a border, must declare border in the html class before adding color and other styling to border.
 
 Commands:
 - npm init -y 
