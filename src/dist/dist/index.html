@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="../dist/output.css">
 
     <title>DG file converter</title>
-  
-  <link rel="stylesheet" href="/assets/index-7c14ff1b.css">
 </head>
 <body class="bg-black">
     <header>
-        <h1 class="p-2 font-mono text-3xl text-white mx-auto container px-52 content-center">Convert office files to markdown</h1>
+        <h1 class="p-2 font-mono text-3xl text-white mx-auto container text-center">Convert office files to markdown</h1>
     </header>
     <main>
         <div id="description" class="p-2 font-mono text-white">
             <p>Convert files from word(.docx) to markdown</p>
         </div>
-        <div id="inputs" class="text-white font-mono border-2 border-green-600 rounded-lg m-3 container mx-auto px-10 max-w-max max-h-max">
-            <ul>
+        <div id="inputs" class="text-white font-mono border-2 border-green-600 rounded-lg m-3 container mx-auto px-10 max-w-max max-h-screen">
+            <ul class="space-x-4 space-y-4">
                 <li>
                     <label for="docxFile">Select a Docx File</label>
                     <input  class="p-2 w-30 h-8" id="docxFile" type="file" placeholder="Give me a docx file" accept=".docx"></input>
@@ -28,8 +26,13 @@
                     <label for="mdFile">Select a md file</label>
                     <input class="p-2 w-30 h-8" id="mdFile" type="file" placeholder="Give me a md file" accept=".md"></input>
                 </li>
+
             </ul>
-            <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">Convert file</button>
+            
+            <div class="flex flex-row w-full m-2">
+              <div class="flex-1"></div><button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full content-center space-x-4 space-y-4">Convert file</button><div class="flex-1"></div>
+            </div>
+            <!-- <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full content-center space-x-4 space-y-4">Convert file</button> -->
 			<!-- <input  id="docxFile" type="file" placeholder="Give me a docx file" accept=".docx">Select a docx file</input>
 			<input id="mdFile" type="file" placeholder="Give me a md file" accept=".md">Select a md file</input> -->
 		</div>
